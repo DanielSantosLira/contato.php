@@ -15,5 +15,13 @@
             <th>Telefone</th>
         </tr>
     </table>
+    <?php
+
+     $conexao = mysqli_connect("localhost", "root", "", "contato");
+
+
+
+     mysqli_close($conexao)
+    ?>
 </body>
 </html>
