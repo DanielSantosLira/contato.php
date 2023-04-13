@@ -14,14 +14,23 @@
             <th>Nome</th>
             <th>Telefone</th>
         </tr>
-    </table>
+   
     <?php
 
      $conexao = mysqli_connect("localhost", "root", "", "contato");
 
+       $sqlBusca = "select * from contato";
+       $todasAsContato = mysqli_query($conexao, $sqlBusca);
+          
+       while($umaPessoa = mysqli_fetch_assoc($todasAsContato)){
+        echo "<tr>";
+        echo "<td>". $umaPessoa["nome"]. "</td>";
+        echo "<td>". $umaPessoa["telefone"]. "</td>";
+        echo "</tr>";
 
-
+       }
      mysqli_close($conexao)
     ?>
+     </table>
 </body>
 </html>
