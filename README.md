@@ -4,9 +4,9 @@
  ### Banco de dados
 - criar banco de dados contatos
 - criar tabela pessoas com 3 colunas 
-   nome_tarefa varchar(100)
-    data_tarefa varchar(10)
-    situacao_tarefa varchar (15)
+   - nome_tarefa varchar(100)
+    - data_tarefa varchar(10)
+    - situacao_tarefa varchar (15)
 -cadastrar 5 tarefa
 
 ### PHP
